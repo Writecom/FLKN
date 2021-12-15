@@ -1,0 +1,259 @@
+
+/*Tilføjelse af downloaded font*/
+@font-face {
+    font-family: extended;
+    src: url(Helvetica\ Neue\ Medium\ Extended.ttf);
+}
+/*Kode der hjælper med at lave outlined font fra CSS-tricks.com: https://css-tricks.com/adding-stroke-to-web-text/*/
+@supports (-webkit-text-stroke: 1px black) {
+
+/*Variabler, såsom gengående farver, styling af linjer, mm.*/
+:root{
+    --red:#FF5558;
+    --blue:#E9F5F5;
+}
+
+/*Generel Styling det er meget gengående*/
+body{
+    background-color:var(--blue);
+    margin: 0px;
+    padding: 0px;
+    background-image: url(./img/backdrop.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+/*b-tagget bruges til at redigere en portion tekst midt i en paragraf, uden at ændre på placeringen*/
+b {
+    -webkit-text-stroke: 1px var(--red);
+    -webkit-text-fill-color: var(--blue);
+}
+
+h1{
+    font-size: 51px;
+    margin-left: 35px;
+    margin-top: 64px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+h1, h2, h3{
+    font-family: extended;
+    color: #FF5558;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    letter-spacing: 0px;
+    font-weight: 700;
+}
+
+a{
+    text-decoration: none;
+    color: var(--red);
+    margin-right: 37px;
+
+}
+
+.pagetitle{
+    margin: 52px 0px 33px 37px;
+    font-size: 37px;
+}
+
+/*Styling af contact knappen*/
+#footer {
+    text-align: right;
+}
+
+
+    /*START FRONT PAGE*/
+
+/*Styling af linjer der understreger titlerne*/
+hr{
+    color: var(--red);
+    height: 1px;
+    width: 80%;
+    margin-left: 0px;
+    text-align: left;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+/*Styling til de 3 overtitler til forsiden*/
+.frontpage-box {
+    margin: 23px 23px 0px 35px;
+}
+
+.frontpage-box h2 {
+    margin-bottom: 0px;
+}
+
+.frontpage-box p {
+    color: #FF5558;
+    margin-top: 0px;
+    margin-bottom: 46px;
+    font-size: 14pt;
+}
+
+/*Styling af introduktionsparagraffen*/
+#introduction-box {
+    margin-left: 37px;
+    margin-right: 37px;
+    background-image: url(./img/tågettogbane2.png);
+    padding: 25px 25px 14px 14px;
+
+}
+
+#introduction-box div {
+    background-color: var(--red);
+    padding: 15px 13px 15px 13px;
+}
+
+
+    /*SLUT FRONTPAGE*/
+
+    /*START HUBPAGE*/
+
+/*styling af logo i toppen af siden*/
+
+.toplogo h1{
+    font-size: 31px;
+    margin-top: 47px;
+}
+
+/*Styling af grid elementer til scrollgruppen*/
+.gridbox{
+    max-width: 354px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--red);
+    margin-bottom: 33px;
+}
+
+.titlebox{
+    height: 141px;
+    width: 172px;
+    text-align: center;
+    background-color: var(--red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titlebox h3{
+    color: white;
+    font-size: 13px;
+}
+
+/*Ændrer på skrifttypen for paragraffer kun inde i denne specfikke class*/
+.titlebox p{
+    font-family: extended;
+}
+
+/*Scrollgroup kode med hjælp fra: https://www.geeksforgeeks.org/making-a-div-vertically-scrollable-using-css/*/
+
+.scrollgroup{
+    overflow-y: auto;
+    height: 623px;
+    width: 354px;
+    margin: auto;
+}
+
+/*Individuelle ændringer af tekst, for at passe bedre på siden*/
+
+#rød{
+    font-size: 30px;
+    margin: 0px;
+}
+
+#pige{
+    font-size: 11px;
+}
+
+    /*SLUT HUBPAGE*/
+
+    /*START CONTENTPAGES*/
+
+.content-title{
+    color: white;
+    background-color: var(--red);
+    padding: 13px 94px 13px 94px;
+    margin: 37px 128px 14px 37px;
+    text-align: center;
+}
+
+.content-role{
+    color: white;
+    background-color: var(--red);
+    padding: 29px 22px 29px 22px;
+    margin: 14px 37px 37px 37px;
+    text-align: center;
+}
+
+.text-box{
+    background-color: var(--red);
+    padding: 23px 41px;
+    margin: 41px 37px 30px 37px;
+    height: 317px;
+}
+
+.text-box p{
+    margin: 22px 22px 22pxpx 22px;
+    font-size: 15px;
+    width: 272px;
+
+}
+
+.display-image{
+    background-color: var(--red);
+    width: 100%;
+    padding: 32px 0px; 
+    display: flex;
+    align-items: center; 
+}
+
+.display-image img{
+    max-width: 354px;
+    margin: auto;
+}
+
+    /*SLUT PÅ CONTENTPAGE*/
+    
+    /*START PÅ CONTACTPAGE*/
+/*Bodystørrelsen ændres så baggrunden passer perfekt, selvom der næsten intet indhold er på denne side */
+#contactpage{
+    min-height: 926px;
+}
+
+.contact-box{
+    background-image: url(./img/tågettogbane.jpg);
+    background-size: contain;
+    max-width: 354px;
+    margin: 25px auto 0px auto;
+    padding: 44px 29px;
+}
+
+.contact-box div{
+    background-color: var(--red);
+    padding: 16px 0px 50px 28px;
+    max-width: 300px;
+
+}
+
+.contact-box div h3{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 9px;
+}
+
+.contact-box div p{
+    margin-bottom: 48px;
+}
+
+/*slut på outlined font*/
+}
