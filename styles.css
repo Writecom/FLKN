@@ -175,6 +175,33 @@ hr{
     font-size: 11px;
 }
 
+#su-kok{
+    font-size: 19px;
+    margin-top: 10px;
+}
+
+/*Baggrundsbilleder til indivduelle bokse*/
+
+/*VIDEO HUB*/
+#SU-kokken{
+    background-image: url(./img/SU\ KOkken.png);
+    background-size: contain;
+}
+
+#roskildefestival{
+    background-image: url(./img/ROSKILDE-FESTIVAL-FRIVILLIG-logo.png);
+    background-size: contain;
+}
+
+/*ART DIRECTOR HUB*/
+
+/*WEBSITE HUB*/
+
+#Plantasia{
+    background-image: url(./img/plantasiabackdrop2.jpg);
+    background-size: contain; 
+}
+
     /*SLUT HUBPAGE*/
 
     /*START CONTENTPAGES*/
@@ -182,15 +209,27 @@ hr{
 .content-title{
     color: white;
     background-color: var(--red);
-    padding: 13px 94px 13px 94px;
+    padding: 13px 94px;
     margin: 37px 128px 14px 37px;
     text-align: center;
+}
+
+.content-title1{
+    background-color: var(--red);
+    margin-left: 37px;
+    width: 263px;
+    text-align: center;
+    padding: 13px 0px;
+}
+
+.content-title1 h2{
+    color: white;
 }
 
 .content-role{
     color: white;
     background-color: var(--red);
-    padding: 29px 22px 29px 22px;
+    padding: 29px 22px;
     margin: 14px 37px 37px 37px;
     text-align: center;
 }
@@ -221,6 +260,23 @@ hr{
     max-width: 354px;
     margin: auto;
 }
+.txtlink{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: underline;
+}
+
+/*Individuelle font-sizes til forskellige content*/
+#su-kok-title{
+    font-size: 20px;
+}
+
+#pigetitle{
+    font-size: 18px;
+}
+
 
     /*SLUT PÅ CONTENTPAGE*/
     
