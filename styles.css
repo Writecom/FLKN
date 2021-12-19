@@ -209,15 +209,7 @@ hr{
 
     /*SLUT HUBPAGE*/
 
-    /*START CONTENTPAGES*/
-
-.content-title{
-    color: white;
-    background-color: var(--red);
-    padding: 13px 94px;
-    margin: 37px 128px 14px 37px;
-    text-align: center;
-}
+   /*START CONTENTPAGES*/
 
 .content-title1{
     background-color: var(--red);
@@ -247,7 +239,7 @@ hr{
 }
 
 .text-box p{
-    margin: 22px 22px 22pxpx 22px;
+    margin: 22px 22px 22px 22px;
     font-size: 15px;
     width: 272px;
 
@@ -259,6 +251,7 @@ hr{
     padding: 32px 0px; 
     display: flex;
     align-items: center; 
+    float: none;
 }
 
 .display-image img{
@@ -272,6 +265,18 @@ hr{
     padding: 0px;
     text-decoration: underline;
 }
+
+/*Individuelle font-sizes til forskellige content*/
+#su-kok-title{
+    font-size: 20px;
+}
+
+#pigetitle{
+    font-size: 18px;
+}
+
+
+    /*SLUT PÅ CONTENTPAGE*/
 
 /*Individuelle font-sizes til forskellige content*/
 #su-kok-title{
@@ -521,7 +526,7 @@ hr{
     }
 
         /*SLUT HUBPAGE*/
-    }
+
 
       /*START PÅ CONTACTPAGE*/
 /*Bodystørrelsen ændres så baggrunden passer perfekt, selvom der næsten intet indhold er på denne side */
@@ -570,10 +575,15 @@ hr{
 
     /*START CONTENTPAGES*/
 
+
     .content-title{
-        padding: 13px 94px;
+        color: white;
+        background-color: var(--red);
+        padding: 13px 22px;
         margin: 37px 128px 14px 37px;
+        text-align: center;
     }
+    
     
     .content-title1{
         margin-left: 560px;
@@ -592,17 +602,11 @@ hr{
     
     .text-box{
         padding: 23px 22px;
-        height: 317px;
+        height: 350px;
         max-width: 400px;
         margin: 40px 34px auto 550px;
     }
     
-    .text-box p{
-        margin: 22px 22px 22pxpx 22px;
-        font-size: 15px;
-        width: 272px;
-    
-    }
     
     .display-image{
         background-color: var(--red);
@@ -619,13 +623,7 @@ hr{
     }
 
     /*Individuelle font-sizes til forskellige content*/
-    #su-kok-title{
-        font-size: 50px;
-    }
-    
-    #pigetitle{
-        font-size: 30px;
-    }
-    
+
     
         /*SLUT PÅ CONTENTPAGE*/
+    }
