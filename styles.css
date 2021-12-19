@@ -62,9 +62,14 @@ a{
     font-size: 37px;
 }
 
-/*Styling af contact knappen*/
+/*Styling af footer*/
 #footer {
     text-align: right;
+    position: sticky;
+    height: 60px;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
 }
 
 
@@ -311,5 +316,316 @@ hr{
     margin-bottom: 48px;
 }
 
+.some-icon img{
+    height: 40px;
+    width: 40px;
+}
+
 /*slut på outlined font*/
 }
+
+@media screen and (min-width: 600px) {
+    body{
+        background-image: url(./img/desktop-backdrop.png);
+        background-size:100% 100vh;
+    }
+
+    h1{
+        font-size: 116px;
+        margin-left: 14.5%;
+        margin-top: 64px;
+    }
+    
+    h2{
+        font-size: 30px;
+    }
+    
+    
+    p{
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        letter-spacing: 0px;
+        font-weight: 700;
+    }
+    
+    a{
+        text-decoration: none;
+        color: var(--red);
+        margin-right: 37px;
+    
+    }
+    
+    .pagetitle{
+        margin: 52px 0px 33px 37px;
+        font-size: 37px;
+    }
+    
+    /*Styling af footer*/
+    #footer {
+        text-align: right;
+        position: sticky;
+        height: 100px;
+        margin-top: 100px;
+        margin-right: 178px;
+        width: 100%;
+    }
+    
+    
+        /*START FRONT PAGE*/
+    
+    
+    /*Styling til de 3 overtitler til forsiden*/
+    .frontpage-box {
+        margin: 23px 23px 0px 35px;
+    }
+    
+    .frontpage-box h2 {
+        margin-bottom: 0px;
+        font-size: 65px;
+    }
+    
+    .frontpage-box p {
+        color: #FF5558;
+        margin-top: 0px;
+        margin-bottom: 46px;
+        font-size: 28px;
+    }
+    
+    /*Styling af introduktionsparagraffen*/
+    #introduction-box {
+        width: 674px;
+        height: 500px;
+        background-size: 100% 100vh;
+        margin-left: 0px;
+
+    }
+    
+    #introduction-box div {
+        background-color: var(--red);
+        padding: 15px 13px 15px 13px;
+        margin: 0px;
+    }
+
+    #introduction-box div p {
+        font-size: 26px;
+    } 
+
+
+    #frontpage {
+        display: flex;
+        flex-direction: column;
+    }
+
+    article {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin: 0px 180px 0px 278px;
+        gap: 154px;
+    }
+
+    #footer h2{
+        font-size: 36px
+    }
+    
+    #start-art{
+        margin-top: 0px;
+    }
+    
+        /*START HUBPAGE*/
+
+    /*styling af logo i toppen af siden*/
+
+
+    .toplogo h1{
+        font-size: 50px;
+        margin-top: 38px;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+    }
+
+    /*Styling af grid elementer til scrollgruppen*/
+    .gridbox{
+        width: 1000px;
+        height: 460px;
+        margin-bottom: 30px;
+    }
+
+    .titlebox{
+        height: 200px;
+        width: 400px;
+    }
+
+    .titlebox h3{
+        font-size: 25px;
+    }
+
+    a{
+        margin-right: 0px;
+    }
+
+    .pagetitle{
+        margin-left: 210px;
+        font-size: 75px;
+    }
+
+    /*Scrollgroup kode med hjælp fra: https://www.geeksforgeeks.org/making-a-div-vertically-scrollable-using-css/*/
+
+    .scrollgroup{
+        overflow-y: auto;
+        height: 730px;
+        width: 1500px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    /*Individuelle ændringer af tekst, for at passe bedre på siden*/
+
+    #rød{
+        font-size: 30px;
+        margin: 0px;
+    }
+
+    #pige{
+        font-size: 17px;
+    }
+
+    #su-kok{
+        font-size: 25px;
+        margin-top: 10px;
+    }
+
+    /*Baggrundsbilleder til indivduelle bokse*/
+
+    /*VIDEO HUB*/
+    #SU-kokken{
+        background-image: url(./img/SU\ KOkken.png);
+        background-size: contain;
+    }
+
+    #roskildefestival{
+        background-image: url(./img/ROSKILDE-FESTIVAL-FRIVILLIG-logo.png);
+        background-size: contain;
+    }
+
+    /*ART DIRECTOR HUB*/
+
+    /*WEBSITE HUB*/
+
+    #Plantasia{
+        background-image: url(./img/plantasiabackdrop2.jpg);
+        background-size: contain; 
+    }
+
+        /*SLUT HUBPAGE*/
+    }
+
+      /*START PÅ CONTACTPAGE*/
+/*Bodystørrelsen ændres så baggrunden passer perfekt, selvom der næsten intet indhold er på denne side */
+#contactpage{
+    min-height: 1080px;
+}
+
+#contact{
+    margin-left: 512;
+}
+
+.contact-box{
+    background-image: url(./img/tågettogbane.jpg);
+    background-size: contain;
+    max-width: 812px;
+    margin: 25px auto 0px auto;
+    padding: 44px 29px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-box div{
+    background-color: var(--red);
+    padding: 16px 0px 50px 28px;
+    width: 800px;
+
+}
+
+.contact-box div h3{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 9px;
+}
+
+.contact-box div p{
+    margin-bottom: 48px;
+}
+
+.some-icon img{
+    height: 40px;
+    width: 40px;
+    margin-right: 20px;
+}
+
+
+    /*START CONTENTPAGES*/
+
+    .content-title{
+        padding: 13px 94px;
+        margin: 37px 128px 14px 37px;
+    }
+    
+    .content-title1{
+        margin-left: 560px;
+        width: 400px;
+        padding: 13px 22px;
+    }
+    
+    
+    .content-role{
+        padding: 29px 22px;
+        margin-left: 560px;
+        width: 400px;
+        font-size: 40px;
+
+    }
+    
+    .text-box{
+        padding: 23px 22px;
+        height: 317px;
+        max-width: 400px;
+        margin: 40px 34px auto 550px;
+    }
+    
+    .text-box p{
+        margin: 22px 22px 22pxpx 22px;
+        font-size: 15px;
+        width: 272px;
+    
+    }
+    
+    .display-image{
+        background-color: var(--red);
+        width: 450px;
+        padding: 32px; 
+        float: right;
+        margin-right: 300px;
+ 
+    }
+    
+    .display-image img{
+        max-width: 450px;
+        margin: auto;
+    }
+
+    /*Individuelle font-sizes til forskellige content*/
+    #su-kok-title{
+        font-size: 50px;
+    }
+    
+    #pigetitle{
+        font-size: 30px;
+    }
+    
+    
+        /*SLUT PÅ CONTENTPAGE*/
